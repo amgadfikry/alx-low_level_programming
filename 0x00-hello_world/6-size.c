@@ -2,7 +2,7 @@
 /**
  * main - program to get size of all data types using sizeof function
  *
- * Return 0 (success)
+ * Return: 0 (success)
 */
 int main(void)
 {
