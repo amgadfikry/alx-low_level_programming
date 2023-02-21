@@ -6,8 +6,8 @@
 int main(void)
 {
 	int i;
-	int a = 1;
-	int b = 2;
+	long int a = 1;
+	long int b = 2;
 
 	printf("%d, ", a);
 	printf("%d, ", b);
