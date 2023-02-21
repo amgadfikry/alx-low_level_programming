@@ -1,18 +1,8 @@
-#include <stdio.h>
 #include "main.h"
 /**
- * main - entry point function
  * print_alphabet - print lowercase alphabet
- * Return: 0
+ * Return: nothing
  */
-void print_alphabet(void);
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
-
 void print_alphabet(void)
 {
 	char c;
