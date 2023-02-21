@@ -9,11 +9,11 @@ int main(void)
 	int a = 1;
 	int b = 2;
 
+	printf("%d, ", a);
+	printf("%d, ", b);
 	for (i = 1; i <= 50; i++)
 	{
-		printf("%d, ", a);
-		printf("%d, ", b);
-		if ( i % 2 == 1)
+		if (i % 2 == 1)
 		{
 			a = a + b;
 			printf("%d, ", a);
@@ -26,8 +26,8 @@ int main(void)
 			else
 				printf("%d, ", b);
 		}
-		printf("\n");
 	}
+	printf("\n");
 
 	return (0);
 }
