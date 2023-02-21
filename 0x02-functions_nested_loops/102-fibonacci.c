@@ -11,7 +11,7 @@ int main(void)
 
 	printf("%ld, ", a);
 	printf("%ld, ", b);
-	for (i = 1; i <= 50; i++)
+	for (i = 1; i <= 48; i++)
 	{
 		if (i % 2 == 1)
 		{
@@ -21,7 +21,7 @@ int main(void)
 		else if (i % 2 == 0)
 		{
 			b = a + b;
-			if (i != 50)
+			if (i != 48)
 				printf("%ld, ", b);
 			else
 				printf("%ld, ", b);
