@@ -21,8 +21,8 @@ int main(void)
 		else if (i % 2 == 0)
 		{
 			b = a + b;
-			if (i != 48)
-				printf("%ld, ", b);
+			if (i == 48)
+				printf("%ld", b);
 			else
 				printf("%ld, ", b);
 		}
