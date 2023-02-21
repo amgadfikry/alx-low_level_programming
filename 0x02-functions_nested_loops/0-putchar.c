@@ -5,8 +5,8 @@
  */
 int main(void)
 {	
-	char printed[9] = "_putchar";
-	int i ;
+	char printed[8] = "_putchar";
+	int i;
 
 	for (i = 0; i < 9; i++)
 		_putchar(printed[i]);
