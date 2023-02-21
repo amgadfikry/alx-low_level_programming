@@ -9,22 +9,22 @@ int main(void)
 	long int a = 1;
 	long int b = 2;
 
-	printf("%d, ", a);
-	printf("%d, ", b);
+	printf("%ld, ", a);
+	printf("%ld, ", b);
 	for (i = 1; i <= 50; i++)
 	{
 		if (i % 2 == 1)
 		{
 			a = a + b;
-			printf("%d, ", a);
+			printf("%ld, ", a);
 		}
 		else if (i % 2 == 0)
 		{
 			b = a + b;
 			if (i != 50)
-				printf("%d, ", b);
+				printf("%ld, ", b);
 			else
-				printf("%d, ", b);
+				printf("%ld, ", b);
 		}
 	}
 	printf("\n");
