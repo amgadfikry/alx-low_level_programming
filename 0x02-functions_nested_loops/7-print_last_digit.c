@@ -9,7 +9,7 @@ int print_last_digit(int n)
 	double num;
 	int result;
 
-	num = n / 10;
+	num = n / 10.0;
 	result = (num - (int)num) * 10;
 
 	return (result);
