@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 /**
  * print_times_table - function print table of numbers
  * @n: input number
