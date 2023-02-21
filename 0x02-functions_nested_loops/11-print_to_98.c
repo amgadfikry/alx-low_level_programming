@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_to_98 - print all numbers to 98
  * @n: number start from it
@@ -12,11 +13,10 @@ void print_to_98(int n)
 	{
 		for (i = n; i >= 98; i--)
 		{
-			_putchar(i);
+			printf("%d",i);
 			if (i != 98)
 			{
-				_putchar(',');
-				_putchar(' ');
+				printf(", ");
 			}
 		}
 	}
@@ -24,15 +24,14 @@ void print_to_98(int n)
 	{
 		for (i = n; i <=98; i++)
 		{
-			_putchar(i);
+			printf("%d",i);
 			if (i != 98)
 			{
-				_putchar(',');
-				_putchar(' ');
+				printf(", ");
 			}
 		}
 	}
 	else
-		_putchar(n);
-	_putchar('\n');
+		printf("%d",n);
+	printf("\n");
 }
