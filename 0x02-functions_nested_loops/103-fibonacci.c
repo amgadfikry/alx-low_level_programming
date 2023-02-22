@@ -15,24 +15,24 @@ int main(void)
 		if (i % 2 == 1)
 		{
 			a = a + b;
-			if (a >= 4000000)
-				break;
-			else
+			if (a < 4000000)
 			{
 				if (a % 2 == 0)
 					sum += a;
 			}
+			else
+				break;
 		}
 		else if (i % 2 == 0)
 		{
 			b = a + b;
-			if (b >= 4000000)
-				break;
-			else
+			if (b < 4000000)
 			{
 				if (b % 2 == 0)
 					sum += b;
 			}
+			else
+				break;
 		}
 	}
 	printf("%ld\n", sum);
