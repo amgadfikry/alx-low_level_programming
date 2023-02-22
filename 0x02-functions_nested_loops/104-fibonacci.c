@@ -11,7 +11,7 @@ int main(void)
 
 	printf("%ld, ", a);
 	printf("%ld, ", b);
-	for (i = 1; i <= 96; i++)
+	for (i = 1; i <= 80; i++)
 	{
 		if (i % 2 == 1)
 		{
