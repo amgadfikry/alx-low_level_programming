@@ -16,12 +16,12 @@ int main(void)
 		if (i % 2 == 1)
 		{
 			a = a + b;
-			printf("%lu%010lu", a);
+			printf("%010lu", a);
 		}
 		else if (i % 2 == 0)
 		{
 			b = a + b;
-			printf("%lu%010lu", b);
+			printf("%010lu", b);
 		}
 		if (i != 96)
 			printf(", ");
