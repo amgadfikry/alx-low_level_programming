@@ -6,8 +6,8 @@
 int main(void)
 {
 	int i;
-	unsigned long int a = 1;
-	unsigned long int b = 2;
+	unsigned long long int a = 1;
+	unsigned long long int b = 2;
 
 	printf("%lu, ", a);
 	printf("%lu, ", b);
