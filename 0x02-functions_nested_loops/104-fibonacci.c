@@ -11,21 +11,20 @@ int main(void)
 
 	printf("%ld, ", a);
 	printf("%ld, ", b);
-	for (i = 1; i <= 80; i++)
+	for (i = 1; i <= 97; i++)
 	{
 		if (i % 2 == 1)
 		{
 			a = a + b;
-			printf("%ld, ", a);
+			printf("%ld", a);
 		}
 		else if (i % 2 == 0)
 		{
 			b = a + b;
-			if (i == 96)
-				printf("%ld", b);
-			else
-				printf("%ld, ", b);
+			printf("%ld", b);
 		}
+		if (i != 97)
+			printf(", ");
 	}
 	printf("\n");
 
