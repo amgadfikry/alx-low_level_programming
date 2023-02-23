@@ -2,6 +2,7 @@
 /**
  * print_diagonal - print diagonal line
  * @n: num input
+ *
  * Return: nothing
  */
 void print_diagonal(int n)
@@ -14,7 +15,7 @@ void print_diagonal(int n)
 		{
 			int j = 0;
 
-			while(j < i)
+			while (j < i)
 			{
 				_putchar(' ');
 				j++;
