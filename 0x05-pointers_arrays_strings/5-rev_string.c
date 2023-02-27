@@ -10,15 +10,13 @@ void rev_string(char *s)
 	int num = 0;
 	int j;
 	int x = 0;
+	char *be = s;
 
 	while (s[i] != '\0')
 	{
 		num++;
 		i++;
-	};
-
-	char be[int num];
-
+	}
 	for (j = 0; j > num; j++)
 	{
 		be[j] = s[j];
