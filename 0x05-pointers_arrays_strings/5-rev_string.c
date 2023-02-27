@@ -15,9 +15,10 @@ void rev_string(char *s)
 	{
 		num++;
 		i++;
-	}
+	};
 
-	char be[num];
+	const int size = num;
+	char be[size];
 
 	for (j = num - 1; j >= 0; j--)
 	{
