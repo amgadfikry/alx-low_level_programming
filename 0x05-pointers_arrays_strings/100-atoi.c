@@ -2,7 +2,7 @@
 /**
  * _atoi - print number in string
  * @s: input string
- * Return; number or 0
+ * Return: number or 0
  */
 int _atoi(char *s)
 {
