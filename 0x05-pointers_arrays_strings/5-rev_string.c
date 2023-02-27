@@ -17,10 +17,6 @@ void rev_string(char *s)
 		num++;
 		i++;
 	}
-	for (j = 0; j > num; j++)
-	{
-		be[j] = s[j];
-	};
 	for (j = num - 1; j >= 0; j--)
 	{
 		s[x] = be[j];
