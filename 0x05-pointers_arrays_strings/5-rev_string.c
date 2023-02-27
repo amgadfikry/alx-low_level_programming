@@ -8,8 +8,8 @@ void rev_string(char *s)
 {
 	int i = 0;
 	int num = 0;
-	int j;
-	int x = 0;
+	int x = 0 ;
+	char c;
 
 	while (s[i] != '\0')
 	{
@@ -17,11 +17,10 @@ void rev_string(char *s)
 		i++;
 	};
 
-	const int size = num;
-	char be[size];
-
 	for (j = num - 1; j >= 0; j--)
 	{
-		x++;
+		c = s[x];
+		s[x++] = s[num];
+		s[num] = c;
 	}
 }
