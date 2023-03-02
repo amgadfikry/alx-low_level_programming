@@ -7,8 +7,8 @@
 char *leet(char *s)
 {
 	int i = 0;
-	char let[10];
-	char num[5];
+	int let[10];
+	int num[5];
 	int x;
 
 	let[0] = 'a';
