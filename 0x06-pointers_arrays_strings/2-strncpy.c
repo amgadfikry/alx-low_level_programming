@@ -16,10 +16,10 @@ char *_strncpy(char *dest, char *src, int n)
 		j++;
 		num_src++;
 	}
-
 	if (n > num_src)
+	{
 		n = num_src;
-
+	}
 	for (x = 0; x < n; x++)
 	{
 		dest[x] = src[x];
