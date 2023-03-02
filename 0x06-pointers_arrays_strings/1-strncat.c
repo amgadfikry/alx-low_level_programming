@@ -24,11 +24,13 @@ char *_strncat(char *dest, char *src, int n)
 	}
 
 	if ( n > num_src)
+	{
 		n = num_src;
+	}
 
 	for (x = num_dest; x <= (num_dest + n); x++)
 	{
-		if (x == (num_src + n))
+		if (y == n)
 		{
 			dest[x] = '\0';
 		}
