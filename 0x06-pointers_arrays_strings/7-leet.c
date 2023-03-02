@@ -8,7 +8,7 @@ char *leet(char *s)
 {
 	int i = 0;
 	char let[10];
-	int num[5];
+	char num[5];
 	int x;
 
 	let[0] = 'a';
@@ -21,17 +21,22 @@ char *leet(char *s)
 	let[7] = 'T';
 	let[8] = 'l';
 	let[9] = 'L';
-	num[0] = 4;
-	num[1] = 3;
-	num[2] = 0;
-	num[3] = 7;
-	num[4] = 1;
+	num[0] = '4';
+	num[1] = '4';
+	num[2] = '3';
+	num[3] = '3';
+	num[4] = '0';
+	num[5] = '0';
+	num[6] = '7';
+	num[7] = '7';
+	num[8] = '1';
+	num[9] = '1';
 	while (s[i] != '\0')
 	{
 		for (x = 0; x < 10; x++)
 		{
 			if (s[i] == let[x])
-				s[i] = num[x / 2];
+				s[i] = num[x];
 		}
 		i++;
 	}
