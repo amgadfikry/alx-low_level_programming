@@ -8,9 +8,8 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int num_dest = 0;
-	int num_src = 0;
-	int i = 0, j = 0, y = 0, x, z = n;
+	int num_dest = 0, num_src = 0;
+	int i = 0, j = 0, y = 0, x;
 
 	while (dest[i] != '\0')
 	{
@@ -24,14 +23,12 @@ char *_strncat(char *dest, char *src, int n)
 		num_src++;
 	}
 
-	if (n > num_src)
-	{
-		z = num_src;
-	}
+	if ( n > num_src)
+		n = num_src;
 
-	for (x = num_dest; x < (num_dest + n); x++)
+	for (x = num_dest; x <= (num_dest + n); x++)
 	{
-		if (y == n)
+		if (x == (num_src + n))
 		{
 			dest[x] = '\0';
 		}
