@@ -36,7 +36,10 @@ char *leet(char *s)
 		for (x = 0; x < 10; x++)
 		{
 			if (s[i] == let[x])
+			{
 				s[i] = num[x];
+				break;
+			}
 		}
 		i++;
 	}
