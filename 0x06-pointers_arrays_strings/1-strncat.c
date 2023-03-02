@@ -17,7 +17,7 @@ char *_strncat(char *dest, char *src, int n)
 		num_dest++;
 	}
 
-	for (x = num_dest; x <= (num_dest + n); x++)
+	for (x = num_dest; x < (num_dest + n); x++)
 	{
 		if (y == n)
 		{
