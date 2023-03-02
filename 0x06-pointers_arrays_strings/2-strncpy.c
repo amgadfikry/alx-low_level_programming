@@ -9,7 +9,7 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 	int num_dest = 0, num_src = 0;
-	int i = 0, j = 0, y = 0, x;
+	int i = 0, j = 0, x;
 
 	while (dest[i] != '\0')
 	{
