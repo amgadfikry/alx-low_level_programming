@@ -9,10 +9,12 @@ char *cap_string(char *s)
 	char sep[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', ')', '(', '{', '}'};
 	int i = 0, x;
 
-	while (s[i] != '\n')
+	while (s[i] != '\0')
 	{
 		if (i == 0 && (s[i] >= 'a' && s[i] <= 'z'))
+		{
 			s[i] -= 32;
+		}
 		for (x = 0; x < 13; x++)
 		{
 			if ((s[i] >= 'a' && s[i] <= 'z') && s[i -1] == sep[x])
