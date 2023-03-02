@@ -6,8 +6,6 @@
  */
 char *string_toupper(char *s)
 {
-	int num = 0, i = 0;
-
 	while (*s)
 	{
 		if (*s >= 'a' && *s <= 'z')
