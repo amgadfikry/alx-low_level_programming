@@ -3,7 +3,7 @@
  * reverse_array - reverse array
  * @a: array
  * @n: int input
- * Return: reversed array
+ * Return: nothing
  */
 void reverse_array(int *a, int n)
 {
@@ -17,6 +17,4 @@ void reverse_array(int *a, int n)
 		a[n - 1] = x;
 		n--;
 	}
-
-	return (a);
 }				
