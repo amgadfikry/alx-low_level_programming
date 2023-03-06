@@ -2,7 +2,7 @@
 /**
  * _strspn - get length of prefix
  * @s: input string
- * @accept: input 
+ * @accept: input
  * Return: length
  */
 unsigned int _strspn(char *s, char *accept)
