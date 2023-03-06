@@ -8,19 +8,18 @@
 void print_diagsums(int *a, int size)
 {
 	int sum1 = 0, sum2 = 0;
-	int x = 0, y = size - 1;
+	int x = 0, y = size * size;
 
-	while (x < size)
+	while (x < y)
 	{
-		sum1 += a[x][x];
-		x++;
+		sum1 += a[x];
+		x += (size + 1);
 	}
 	x = 0;
-	while (x < size)
+	while (x < y - 1)
 	{
-		sum2 += a[x][y];
-		x++;
-		y--;
+		sum2 += a[x];
+		x += (size -1);
 	}
 	printf("%d, %d\n", sum1, sum2);
 }
