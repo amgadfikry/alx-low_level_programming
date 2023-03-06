@@ -9,7 +9,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 	int i = 0;
 
-	while (*s != '\n')
+	while (*s != ('\n' || ','))
 	{
 		while (*accept)
 		{
@@ -19,6 +19,6 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		s++;
 	}
-	
+
 	return (i);
 }
