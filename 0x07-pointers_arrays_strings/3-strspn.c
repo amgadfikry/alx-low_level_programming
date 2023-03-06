@@ -23,7 +23,7 @@ unsigned int _strspn(char *s, char *accept)
 			y++;
 		}
 		if (con == 0)
-			return (0);
+			return (i);
 		x++;
 	}
 
