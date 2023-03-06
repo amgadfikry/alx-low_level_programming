@@ -7,27 +7,27 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i = 0;
-	int x = 0, y = 0;
-	int con = 0;
+	int i = 0;
+	int con;
+	char *start = accept;
 
-	while (accept[x])
+	while (*s)
 	{
-		y = 0;
 		con = 0;
-		while (s[y])
+		while (*accept)
 		{
-			if (accept[x] == s[y])
+			if (*accept == *s)
 			{
 				i++;
-				con++;
+				con = 1;
 				break;
 			}
-			y++;
+			accept++;
 		}
+		s++;
+		accept = start;
 		if (con == 0)
-			return (i);
-		x++;
+			break;
 	}
 
 	return (i);
