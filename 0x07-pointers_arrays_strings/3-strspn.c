@@ -17,10 +17,12 @@ unsigned int _strspn(char *s, char *accept)
 		con = 0;
 		while (s[y] != ' ')
 		{
-			if (accept[0] == s[y])
-				con = 1;
 			if (accept[x] == s[y])
+			{
 				i++;
+				con++;
+				break;
+			}
 			y++;
 		}
 		if (con == 0)
