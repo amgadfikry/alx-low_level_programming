@@ -14,12 +14,10 @@ char *_strchr(char *s, char c)
 		if (*s == c)
 		{
 			x = s;
-			break;
+			return (x);
 		}
-		else
-			return (NULL);
 		s++;
 	}
 
-	return (x);
+	return (NULL);
 }
