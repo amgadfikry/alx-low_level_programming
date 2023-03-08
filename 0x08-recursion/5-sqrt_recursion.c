@@ -1,21 +1,21 @@
 #include "main.h"
 /**
- * _sqrt_recursion - give square root
- * @n: input number
- * Return: number
- */
-int sqr(int start, int result);
-
-int _sqrt_recursion(int n)
-{
-	return (sqr(1, n));
-}
-/**
  * sqr - function check root
  * @start: input number
  * @result: input number
  * Return: result
  */
+int sqr(int start, int result);
+/**
+ * _sqrt_recursion - give square root
+ * @n: input number
+ * Return: number
+ */
+int _sqrt_recursion(int n)
+{
+	return (sqr(1, n));
+}
+
 int sqr(int start, int result)
 {
 	if (start * start == result)
