@@ -7,8 +7,7 @@ int check(int i, int n);
  */
 int is_prime_number(int n)
 {
-	if (n == 0 || n == 1)
-		return (0);
+	return (check(2, n));
 }
 /**
  * check - check prime or not
