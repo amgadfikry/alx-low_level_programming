@@ -18,5 +18,5 @@ int sqr(int start, int result)
 	else if (start > result)
 		return (-1);
 	else
-		sqr(start + 1, result);
+		return (eqr(start + 1, result));
 }
