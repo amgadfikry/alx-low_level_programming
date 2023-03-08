@@ -15,7 +15,7 @@ int sqr(int start, int result)
 {
 	if (start * start == result)
 		return (start);
-	else if (start > result)
+	else if (start * start > result)
 		return (-1);
 	else
 		return (sqr(start + 1, result));
