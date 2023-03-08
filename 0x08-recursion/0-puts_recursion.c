@@ -1,0 +1,16 @@
+#include "main.h"
+/**
+ * _put_recursion - print string follow with new line
+ * @s: input string
+ * Return: nothing
+ */
+void _puts_recursion(char *s)
+{
+	if (*s == '\0')
+	{
+		_putchar('\0');
+		_putchar('\n');
+	}
+	_putchar(*s);
+	_puts_recursion(s + 1);
+}
