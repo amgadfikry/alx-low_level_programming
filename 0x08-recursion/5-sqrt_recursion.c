@@ -6,7 +6,7 @@
  */
 int sqr(int start, int result)
 {
-	if (start * start = result)
+	if (start * start == result)
 		return (start)
 	else if (start < 0)
 		return (-1);
