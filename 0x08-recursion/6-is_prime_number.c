@@ -22,10 +22,10 @@ int check(int i, int n)
 	if (i / 2 < n)
 	{
 		if (i % i == 0)
-			return (0);
+			return (1);
 		else
 			return (check(i + 1, n));
 	}
 	else
-		return (1);
+		return (0);
 }
