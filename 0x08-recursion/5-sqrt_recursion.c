@@ -6,7 +6,7 @@
  */
 int sqr(int start, int result);
 
-int __sqrt_recursion(int n)
+int _sqrt_recursion(int n)
 {
 	return (sqr(1, n));
 }
