@@ -4,6 +4,13 @@
  * @n: input number
  * Return: number
  */
+int sqr(int start, int result);
+
+int __sqrt_recursion(int n)
+{
+	return (sqr(1, n));
+}
+
 int sqr(int start, int result)
 {
 	if (start * start == result)
@@ -12,9 +19,4 @@ int sqr(int start, int result)
 		return (-1);
 	else
 		sqr(start + 1, result);
-}
-
-int _sqrt_recursion(int n)
-{
-	return (sqr(1, n));
 }
