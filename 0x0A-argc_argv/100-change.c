@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	if (atoi(argv[1] < 1))
+	if (atoi(argv[1]) < 1)
 	{
 		printf("0\n");
 		return (0);
