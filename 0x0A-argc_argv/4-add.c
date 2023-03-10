@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
  * main - main function
  * @argc: count args
@@ -8,8 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
-	int num = 0;
+	int i, x, num = 0;
 
 	if (argc == 1)
 	{
@@ -18,10 +18,13 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		if (atoi(argv[i]) == 0 && argv[i] == "0")
+		for (x = 0; argv[i][x] != '\0'; x++)
 		{
-			printf("Error\n");
-			return (1);
+			if (!isdigit(argv[i][x])
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 		num += atoi(argv[i]);
 	}
