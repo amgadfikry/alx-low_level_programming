@@ -12,7 +12,7 @@ char **strtow(char *str)
 	char *s = str;
 	int size = 0;
 
-	if (str == NULL || !*str || str == " ")
+	if (str == NULL || !*str)
 		return (NULL);
 
 	while (*str)
@@ -22,6 +22,9 @@ char **strtow(char *str)
 		str++;
 	}
 	str = s;
+
+	if (size == 0)
+		return (NULL);
 
 	arr = malloc(sizeof(char *) * size + 1);
 
