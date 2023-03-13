@@ -9,22 +9,20 @@
 char **strtow(char *str)
 {
 	char **arr;
+	char *s = str;
 	int size = 0, i, x, y;
 	int start = 0, end = 0;
 
-	if (str = "" || str == NULL)
+	if (str == "" || str == NULL)
 		return (NULL);
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (*str)
 	{
-		if ((str[i] == " " && str[i + 1] != " ") || str[i] != " ")
-			start = 1;
-		if (str[i] == " " && str[i - 1] != " ")
-			start = 0;
-		if (start == 1)
+		if (*str != ' ')
 			size++;
-		size++;
+		str++;
 	}
+	str = s
 
 	arr = malloc(sizeof(char *) * size + 1);
 
