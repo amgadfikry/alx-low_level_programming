@@ -17,9 +17,8 @@ char **strtow(char *str)
 
 	while (*str)
 	{
-		if (*str != ' ')
+		if (*str != ' ' && (*(str + 1) == ' ' || *(str + 1) == '\0')
 			size++;
-		str++;
 	}
 	str = s;
 
@@ -47,11 +46,30 @@ char **strtow(char *str)
 		{
 			count++;
 			arr[y] = malloc(sizeof(char) * count);
+			if (arr[y] == NULL)
+				return (NULL);
 			count = 0;
 		}
 		str++;
 	}
 	str = s;
+	y = 0;
+	int x = 0;
+	count = 0;
+	while (*str)
+	{
+		if (*str != ' ')
+		{
+			arr[y][x] = *str;
+			x++;
+		}
+		if (*str != ' ' && (*(str + 1) == ' ' || *(str + 1) == '\0'))
+		{
+			arr[y][x] = '\0';
+			y++;
+		}
+		s++;
+	}
 
 	return (arr);
 }
