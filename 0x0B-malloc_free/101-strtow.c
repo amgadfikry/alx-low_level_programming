@@ -12,7 +12,7 @@ char **strtow(char *str)
 	char *s = str;
 	int size = 0;
 
-	if (str == NULL || str[0] == '\0')
+	if (str == NULL || !*str)
 		return (NULL);
 
 	while (*str)
