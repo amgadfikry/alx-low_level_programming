@@ -10,7 +10,6 @@
 int **alloc_grid(int width, int height)
 {
 	int **warr, i = 0, x = 0;
-	int *harr;
 
 	if (width == 0 || height == 0)
 		return (NULL);
@@ -30,7 +29,7 @@ int **alloc_grid(int width, int height)
 		while ( x < width)
 		{
 			warr[i][x] = 0;
-			x++
+			x++;
 		}
 		i++;
 	}
