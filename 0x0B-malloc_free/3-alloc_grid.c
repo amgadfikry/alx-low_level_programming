@@ -23,8 +23,8 @@ int **alloc_grid(int width, int height)
 			harr[x] = 0;
 			x++;
 		}
-		warr[i] = harr;
+		warr[i] = *harr;
 	}
 
-	return (warr);
+	return (*warr);
 }
