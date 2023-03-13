@@ -34,5 +34,5 @@ int **alloc_grid(int width, int height)
 		i++;
 	}
 
-	return (warr);
+	return (result);
 }
