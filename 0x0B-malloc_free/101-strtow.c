@@ -49,7 +49,9 @@ char **strtow(char *str)
 			arr[y] = malloc(sizeof(char) * count);
 			count = 0;
 		}
+		str++;
 	}
+	str = s;
 
 	return (arr);
 }
