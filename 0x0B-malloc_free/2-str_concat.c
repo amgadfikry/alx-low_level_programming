@@ -31,12 +31,12 @@ char *str_concat(char *s1, char *s2)
 
 	while (i < size1 - 1)
 	{
-		p[i] = s[i];
+		p[i] = s1[i];i
 		i++;
 	}
 	while (i < (size1 + size2))
 	{
-		p[i] = s[i - (size1 -1)];
+		p[i] = s2[i - (size1 -1)];
 		i++;
 	}
 
