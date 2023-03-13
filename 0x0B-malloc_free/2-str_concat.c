@@ -9,8 +9,11 @@
  */
 char *str_concat(char *s1, char *s2)
 {
+	char c[0]= "";
+
 	if (s1 == NULL)
-		s1 = "";
+		s1 = c;
+
 	char *str1 = s1, *str2 = s2;
 	int size1 = 0, size2 = 0, i = 0;
 	char *p;
