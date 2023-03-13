@@ -13,7 +13,7 @@ char *str_concat(char *s1, char *s2)
 	int size1 = 0, size2 = 0, i = 0;
 	char *p;
 	if (s1 == NULL)
-		return (NULL);
+		s1 = "";
 	while (*str1)
 	{
 		size1++;
