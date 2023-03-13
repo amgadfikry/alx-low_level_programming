@@ -19,13 +19,14 @@ char **strtow(char *str)
 	{
 		if (*str != ' ' && (*(str + 1) == ' ' || *(str + 1) == '\0'))
 			size++;
+		str++;
 	}
 	str = s;
 
 	if (size == 0)
 		return (NULL);
 
-	arr = malloc(sizeof(char *) * size + 1);
+	arr = malloc(sizeof(char *) * (size + 1));
 
 	if (arr == NULL)
 		return (NULL);
@@ -40,22 +41,21 @@ char **strtow(char *str)
 		if (*str != ' ' && (*(str + 1) == ' ' || *(str + 1) == '\0'))
 		{
 			word = 0;
-			y++;
 		}
 		if (word == 0 && count > 0)
 		{
 			count++;
-			arr[y] = malloc(sizeof(char) * count);
+			arr[y] = malloc(sizeof(char) * (count + 1));
 			if (arr[y] == NULL)
 				return (NULL);
 			count = 0;
+			y++;
 		}
 		str++;
 	}
 	str = s;
 	y = 0;
 	x = 0;
-	count = 0;
 	while (*str)
 	{
 		if (*str != ' ')
@@ -68,8 +68,9 @@ char **strtow(char *str)
 			arr[y][x] = '\0';
 			y++;
 		}
-		s++;
+		str++;
 	}
+	arr[y] = NULL;
 
 	return (arr);
 }
