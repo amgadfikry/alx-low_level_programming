@@ -27,4 +27,5 @@ char **strtow(char *str)
 
 	if (arr == NULL)
 		return (NULL);
+	return (arr);
 }
