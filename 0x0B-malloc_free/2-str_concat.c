@@ -24,19 +24,19 @@ char *str_concat(char *s1, char *s2)
 		str2++;
 	}
 
-	p = malloc(sizeof(char) * (size1 + size2));
+	p = malloc(sizeof(char) * (size1 + size2 -1));
 
 	if (p == NULL)
 		return (NULL);
 
-	while (i < size1 - 1)
+	while (i < size1)
 	{
 		p[i] = s1[i];
 		i++;
 	}
 	while (i < (size1 + size2))
 	{
-		p[i] = s2[i - (size1 -1)];
+		p[i] = s2[i - size1];
 		i++;
 	}
 
