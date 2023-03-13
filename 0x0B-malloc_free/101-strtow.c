@@ -10,8 +10,7 @@ char **strtow(char *str)
 {
 	char **arr;
 	char *s = str;
-	int size = 0, i, x, y;
-	int start = 0, end = 0;
+	int size = 0;
 
 	if (str == NULL)
 		return (NULL);
@@ -22,12 +21,10 @@ char **strtow(char *str)
 			size++;
 		str++;
 	}
-	str = s
+	str = s;
 
 	arr = malloc(sizeof(char *) * size + 1);
 
 	if (arr == NULL)
 		return (NULL);
-
-}				
-
+}
