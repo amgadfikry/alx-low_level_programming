@@ -10,14 +10,14 @@ char **strtow(char *str)
 {
 	char **arr;
 	char *s = str;
-	int size = 0, word = 0, count = 0, y = 0;
+	int size = 0, word = 0, count = 0, y = 0, x;
 
 	if (str == NULL || !*str)
 		return (NULL);
 
 	while (*str)
 	{
-		if (*str != ' ' && (*(str + 1) == ' ' || *(str + 1) == '\0')
+		if (*str != ' ' && (*(str + 1) == ' ' || *(str + 1) == '\0'))
 			size++;
 	}
 	str = s;
@@ -54,7 +54,7 @@ char **strtow(char *str)
 	}
 	str = s;
 	y = 0;
-	int x = 0;
+	x = 0;
 	count = 0;
 	while (*str)
 	{
