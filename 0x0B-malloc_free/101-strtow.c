@@ -6,7 +6,7 @@
  * @str: input string
  * Return: number of words
  */
-int number_words(*str)
+int number_words(char *str)
 {
 	int size = 0;
 
