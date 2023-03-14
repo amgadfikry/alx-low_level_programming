@@ -19,23 +19,55 @@ int number_words(char *str)
 	return (size);
 }
 /**
+ * copy_string - copy content from string to array
+ * @str: string input
+ * @arr: pointer to array
+ * Return: pointer to array
+ */
+char **copy_string(char *str, char **arr)
+{
+	int y = 0, x = 0;
+
+	while (*str)
+	{
+		if (*str != ' ')
+		{
+			arr[y][x] = *str;
+			x++;
+		}
+		if (*str != ' ' && (*(str + 1) == ' ' || *(str + 1) == '\0'))
+		{
+			arr[y][x] = '\0';
+			y++;
+			x = 0;
+		}
+		str++;
+	}
+	arr[y] = NULL;
+
+	return (arr);
+}
+/**
  * strtow - split strings into words
  * @str: input string
  * Return: pointer to array
  */
 char **strtow(char *str)
 {
-	char **arr, *s = str;
-	int size, word = 0, count = 0, y = 0, x = 0;
+	char **arr, *s = str, **result;
+	int size, word = 0, count = 0, y = 0;
 
 	if (str == NULL || !*str)
 		return (NULL);
+
 	size = number_words(str);
 	if (size == 0)
 		return (NULL);
+
 	arr = malloc(sizeof(char *) * (size + 1));
 	if (arr == NULL)
 		return (NULL);
+
 	while (*str)
 	{
 		if (*str != ' ')
@@ -56,23 +88,8 @@ char **strtow(char *str)
 		str++;
 	}
 	str = s;
-	y = 0;
-	while (*str)
-	{
-		if (*str != ' ')
-		{
-			arr[y][x] = *str;
-			x++;
-		}
-		if (*str != ' ' && (*(str + 1) == ' ' || *(str + 1) == '\0'))
-		{
-			arr[y][x] = '\0';
-			y++;
-			x = 0;
-		}
-		str++;
-	}
-	arr[y] = NULL;
+	
+	result = copt_string(str, arr);
 
-	return (arr);
+	return (result);
 }
