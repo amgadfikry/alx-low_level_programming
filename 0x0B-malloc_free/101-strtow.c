@@ -67,6 +67,7 @@ char **strtow(char *str)
 		{
 			arr[y][x] = '\0';
 			y++;
+			x = 0;
 		}
 		str++;
 	}
