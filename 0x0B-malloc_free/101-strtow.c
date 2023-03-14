@@ -88,7 +88,7 @@ char **strtow(char *str)
 		str++;
 	}
 	str = s;
-	
+
 	result = copy_string(str, arr);
 
 	return (result);
