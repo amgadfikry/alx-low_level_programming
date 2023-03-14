@@ -2,35 +2,40 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
+ * number_words - get number of words in string
+ * @str: input string
+ * Return: number of words
+ */
+int number_words(*str)
+{
+	int size = 0;
+
+	while (*str)
+	{
+		if (*str != ' ' && (*(str + 1) == ' ' || *(str + 1) == '\0'))
+			size++;
+		str++
+	}
+	return (size);
+}
+/**
  * strtow - split strings into words
  * @str: input string
  * Return: pointer to array
  */
 char **strtow(char *str)
 {
-	char **arr;
-	char *s = str;
-	int size = 0, word = 0, count = 0, y = 0, x;
+	char **arr, *s = str;
+	int size, word = 0, count = 0, y = 0, x = 0;
 
 	if (str == NULL || !*str)
 		return (NULL);
-
-	while (*str)
-	{
-		if (*str != ' ' && (*(str + 1) == ' ' || *(str + 1) == '\0'))
-			size++;
-		str++;
-	}
-	str = s;
-
+	size = number_words(str);
 	if (size == 0)
 		return (NULL);
-
 	arr = malloc(sizeof(char *) * (size + 1));
-
 	if (arr == NULL)
 		return (NULL);
-
 	while (*str)
 	{
 		if (*str != ' ')
@@ -39,9 +44,7 @@ char **strtow(char *str)
 			count++;
 		}
 		if (*str != ' ' && (*(str + 1) == ' ' || *(str + 1) == '\0'))
-		{
 			word = 0;
-		}
 		if (word == 0 && count > 0)
 		{
 			arr[y] = malloc(sizeof(char) * (count + 1));
@@ -54,7 +57,6 @@ char **strtow(char *str)
 	}
 	str = s;
 	y = 0;
-	x = 0;
 	while (*str)
 	{
 		if (*str != ' ')
