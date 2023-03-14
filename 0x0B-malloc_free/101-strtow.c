@@ -14,7 +14,7 @@ int number_words(char *str)
 	{
 		if (*str != ' ' && (*(str + 1) == ' ' || *(str + 1) == '\0'))
 			size++;
-		str++
+		str++;
 	}
 	return (size);
 }
