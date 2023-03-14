@@ -44,7 +44,6 @@ char **strtow(char *str)
 		}
 		if (word == 0 && count > 0)
 		{
-			count++;
 			arr[y] = malloc(sizeof(char) * (count + 1));
 			if (arr[y] == NULL)
 				return (NULL);
