@@ -89,7 +89,7 @@ char **strtow(char *str)
 	}
 	str = s;
 	
-	result = copt_string(str, arr);
+	result = copy_string(str, arr);
 
 	return (result);
 }
