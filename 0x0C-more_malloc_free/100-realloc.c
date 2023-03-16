@@ -28,12 +28,5 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (p == NULL)
 		return (NULL);
 
-	for (i = 0; i <= old_size; i++)
-	{
-		p = ptr;
-		ptr++;
-		p++;
-	}
-
 	return (p);
 }
