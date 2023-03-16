@@ -2,6 +2,22 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
+ * string_len - length of string
+ * @str: string pointer
+ * Return: length
+ */
+int string_len(char *str)
+{
+	int len = 0;
+	while (*str)
+	{
+		len++;
+		str++;
+	}
+	
+	return len;
+}
+/**
  * string_nconcat - concate teo strings
  * @s1: input string
  * @s2: input string
@@ -18,17 +34,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	while (*s1)
-	{
-		size1++;
-		s1++;
-	}
+	size1 = string_len(s1);
+	size2 = string_len(s2);
 	s1 = str1;
-	while (*s2)
-	{
-		size2++;
-		s2++;
-	}
 	s2 = str2;
 
 	if (n > size2)
@@ -51,6 +59,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		p[i] = s2[i - size1];
 		i++;
 	}
+	p[i] = '\0';
 
 	return (p);
 }
