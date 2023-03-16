@@ -7,5 +7,5 @@
  */
 void main(int argc, char* argv[])
 {
-	exit(98);
+	printf("%d\n", argv[1] * argv[2]);
 }
