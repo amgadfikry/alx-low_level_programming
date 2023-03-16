@@ -9,13 +9,14 @@
 int string_len(char *str)
 {
 	int len = 0;
+
 	while (*str)
 	{
 		len++;
 		str++;
 	}
 
-	return len;
+	return (len);
 }
 /**
  * string_nconcat - concate teo strings
