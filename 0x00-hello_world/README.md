@@ -1,4 +1,4 @@
-# 0x00-hello_world readme
+# 0x00-hello_world
 ### General
 - Why C programming is awesome
 - Who invented C
