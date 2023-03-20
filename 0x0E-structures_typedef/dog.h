@@ -1,5 +1,11 @@
 #ifndef DOG_H
 #define DOG_H
+/**
+ * struct dog - new struct called dog
+ * @name: pointer
+ * @age: float
+ * @owner: pointer
+ */
 struct dog
 {
 	char *name;
