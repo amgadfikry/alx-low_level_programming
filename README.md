@@ -14,3 +14,6 @@ Projects of C programming language of ALX software engineer program
 - 0x0A. C - argc, argv
 - 0x0B. C - malloc, free
 - 0x0C. C - More malloc, free
+- 0x0D. C - Preprocessor
+- 0x0E. C - Structures, typedef
+- 0x0F-function_pointers
