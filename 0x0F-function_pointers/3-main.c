@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 		printf("%d\n", func_p(atoi(argv[1]), atoi(argv[argc - 1])));
 		return (0);
 	}
-	if (argc != 4)
+	else if(argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
