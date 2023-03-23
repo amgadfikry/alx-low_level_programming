@@ -11,7 +11,13 @@
 int main(int argc, char *argv[])
 {
 	int (*func_p)(int, int);
-
+	
+	if (argc != 4 && (atoi(argv[2]) != 0))
+	{
+		func_p = get_op_func("*");
+		printf("%d\n", func_p(atoi(argv[1]), atoi(argv[argc - 1])));
+		return (0);
+	}
 	if (argc != 4)
 	{
 		printf("Error\n");
