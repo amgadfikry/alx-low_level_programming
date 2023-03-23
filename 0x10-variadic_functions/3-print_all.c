@@ -65,10 +65,10 @@ void print_all(const char * const format, ...)
 	va_list p;
 
 	va_start(p, format);
-	while (format[i] != '\0')
+	while (format[i] && format)
 	{
 		j = 0;
-		while (j < 4)
+		while (form[j].c != NULL)
 		{
 			if (format[i] == *(form[j].c))
 			{
