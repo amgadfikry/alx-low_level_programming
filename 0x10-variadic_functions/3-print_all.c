@@ -1,50 +1,6 @@
-#include "variadic_function.h"
-#include <stdlib.h>
+#include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
-/**
- * p_char - print char
- * @p: va_list
- * Return: nothing
- */
-void p_char(va_list p)
-{
-	printf("%c", va_arg(p, int));
-}
-/**
- * p_int - print int
- * @p: va_list
- * Return: nothing
- */
-void p_int(va_list p)
-{
-	printf("%d", va_arg(p, int));
-}
-/**
- * p_float - print float
- * @p: va_list
- * Return: nothing
- */
-void p_float(va_list p)
-{
-	printf("%f", va_arg(p, double));
-}
-/**
- * p_str - print str
- * @p: va_list
- * Return: nothing
- */
-void p_str(va_list p)
-{
-	char *str = va_arg(p, char *);
-
-	if (str == NULL)
-	{
-		printf("(nil)");
-		return;
-	}
-	printf("%s", str);
-}
 /**
  * print_all - function print all parameters different data type
  * @format: input list type of format
@@ -53,33 +9,36 @@ void p_str(va_list p)
  */
 void print_all(const char * const format, ...)
 {
-	fmt form[] = {
-		{"c", p_char},
-		{"i", p_int},
-		{"f", p_float},
-		{"s", p_str},
-		{NULL, NULL}
-	};
-	unsigned int i = 0, j;
-	char *s = "";
+	int i = 0, j = 0;
+	char *s = ", ", *c;
 	va_list p;
 
 	va_start(p, format);
 	while (format[i] && format)
-	{
-		j = 0;
-		while (form[j].c != NULL)
-		{
-			if (format[i] == *(form[j].c))
-			{
-				printf("%s", s);
-				form[j].f(p);
-				s = ", ";
-				break;
-			}
-			j++;
-		}
 		i++;
+	while (format[j] && format)
+	{
+		if (j == (i - 1))
+			s = "";
+		switch (format[j])
+		{
+			case 'c':
+				printf("%c%s", va_arg(p, int), s);
+				break;
+			case 'i':
+				printf("%d%s", va_arg(p, int), s);
+				break;
+			case 'f':
+				printf("%f%s", va_arg(p, double), s);
+				break;
+			case 's':
+				c = va_arg(p, char *);
+				if (c == NULL)
+					c = "(nil)";
+				printf("%s%s", c, s);
+				break;
+		}
+		j++;
 	}
 	va_end(p);
 	printf("\n");
