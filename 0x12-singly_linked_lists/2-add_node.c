@@ -1,5 +1,5 @@
 #include "lists.h"
-#include <string.h>
+#include <stdlib.h>
 /**
  * add_node - add new node
  * @head: pointer to pointer of list
