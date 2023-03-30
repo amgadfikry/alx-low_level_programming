@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
  * print_list - print elements
- * h: pointer to structre
+ * @h: pointer to structre
  * Return: number of nodes
  */
 size_t print_list(const list_t *h)
@@ -16,10 +16,11 @@ size_t print_list(const list_t *h)
 	{
 		printf("[%d] ", p->len);
 		if (p->str == NULL)
-			printf("(nil)");
+			printf("(nil)\n");
 		else
 			printf("%s\n", p->str);
 		count++;
+		p = p->next;
 	}
 
 	return (count);
