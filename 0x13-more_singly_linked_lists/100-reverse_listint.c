@@ -24,6 +24,8 @@ listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *start, *ptr;
 
+	if (*head == NULL)
+		return (*head);
 	ptr = *head;
 	start = ptr->next;
 	while (ptr->next != NULL)
