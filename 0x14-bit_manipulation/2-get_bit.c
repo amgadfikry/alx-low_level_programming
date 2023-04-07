@@ -28,8 +28,6 @@ int get_bit(unsigned long int n, unsigned int index)
 	unsigned int len = get_len(n), i = 0;
 	int *p;
 
-	if ( n == 0 && index == 0)
-		return (0);
 	p = malloc(sizeof(int) * len);
 	if (p == NULL)
 	{
