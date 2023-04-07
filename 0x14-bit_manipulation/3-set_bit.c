@@ -15,7 +15,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 	{
 		*n = *n | 1;
 		*n = *n << index;
-		return (*n);
+		return (1);
 	}
 
 	while (i <= index)
@@ -25,7 +25,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 			*n = *n | 1;
 			t = t | *n;
 			*n = t;
-			return (*n);
+			return (1);
 		}
 		*n = *n >> 1;
 		i++;
