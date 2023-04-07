@@ -11,6 +11,8 @@ int set_bit(unsigned long int *n, unsigned int index)
 	unsigned long int t = *n;
 	unsigned int i = 0;
 
+	if (index > 31)
+		return (-1);
 	if (*n == 0)
 	{
 		*n = *n | 1;
