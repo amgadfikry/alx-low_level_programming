@@ -8,30 +8,15 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int t = *n;
-	unsigned int i = 0;
+	unsigned long int t = 0;
 
 	if (index > 31)
 		return (-1);
-	if (*n == 0)
-	{
-		*n = *n | 1;
-		*n = *n << index;
-		return (1);
-	}
 
-	while (i <= index)
-	{
-		if (index == i)
-		{
-			*n = *n | 1;
-			t = t | *n;
-			*n = t;
-			return (1);
-		}
-		*n = *n >> 1;
-		i++;
-	}
+	t = t | 1;
+	t = t << index;
 
-	return (-1);
+	*n = t | *n;
+
+	return (1);
 }
