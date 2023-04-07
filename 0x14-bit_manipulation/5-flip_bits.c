@@ -11,7 +11,12 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int t;
 	int differ = 0, i = 0;
 
-	t = n ^ m;
+	if (n == 0)
+		t = m;
+	else if (m == 0)
+		t = n;
+	else
+		t = n ^ m;
 	while (i < 32)
 	{
 		if (t & 1)
