@@ -3,6 +3,8 @@
 #include <fcntl.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <unistd.h>
+#include <sys/uio.h>
 /**
  * read_textfile - function reads text file and print
  * it to out put POSIX
