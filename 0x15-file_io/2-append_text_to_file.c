@@ -15,7 +15,7 @@ int get_len(char *s)
 	while (s[i])
 		i++;
 
-	return(i);
+	return (i);
 }
 /**
  * append_text_to_file - function add text at end of file
