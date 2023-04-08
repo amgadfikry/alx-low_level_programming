@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
 #include <fcntl.h>
-#include <errno.h>
+#include <sys/types.h>
+#include <sys/stat.h>
 /**
  * read_textfile - function reads text file and print
  * it to out put POSIX
