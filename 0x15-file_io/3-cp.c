@@ -48,7 +48,6 @@ int main(int ac, char **av)
 {
 	int file_from, file_to, wr, len, close_file;
 	char *str;
-	mode_t old_umask = umask(0);
 
 	if (ac != 3)
 	{
@@ -70,9 +69,9 @@ int main(int ac, char **av)
 	if (wr < 0 || file_to < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
+		close(file_to);
 		exit(99);
 	}
-	umask(old_umask);
 
 	close_file = close(file_from);
 	if (close_file < 0)
