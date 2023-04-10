@@ -48,6 +48,7 @@ int main(int ac, char **av)
 {
 	int file_from, file_to, wr, len, close_file;
 	char *str;
+	mode_t old_umask = umask(0);
 
 	if (ac != 3)
 	{
