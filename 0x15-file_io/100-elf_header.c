@@ -14,11 +14,24 @@
  */
 int main(int ac, char *av[])
 {
+	int file, rd;
+	char str[2];
+
 	if (ac != 2)
-	{
-		perror("args:");
 		exit(98);
-	}
+
+	file = open(av[1], O_RDONLY);
+	if (file < 0)
+		exit(98);
+
+	rd = read(file, str, 2);
+	if (rd < 0)
+		exit(98);
+
+	if (str[1] != 'E')
+		exit(98);
+
+	close(file);
 
 	return (0);
 }
