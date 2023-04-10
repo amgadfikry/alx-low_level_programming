@@ -18,8 +18,10 @@ int main(int ac, char *av[])
 	char str[2];
 
 	if (ac != 2)
+	{
+		write(STDERR_FILENO, "ERROR", 5);
 		exit(98);
-
+	}
 	file = open(av[1], O_RDONLY);
 	if (file < 0)
 		exit(98);
