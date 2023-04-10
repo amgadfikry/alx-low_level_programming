@@ -64,7 +64,7 @@ int main(int ac, char **av)
 	}
 	str = file_read(file_from, len);
 
-	file_to = open(av[2], O_RDWR | O_CREAT | O_APPEND, 0664);
+	file_to = open(av[2], O_RDWR | O_CREAT | O_TRUNC, 0664);
 	wr = write(file_to, str, len);
 	if (wr < 0)
 	{
