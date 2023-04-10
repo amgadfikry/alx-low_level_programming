@@ -27,6 +27,7 @@ int file_len(char *file_name)
 char *file_read(int file, int len)
 {
 	char *str;
+	int rd;
 
 	str = malloc(sizeof(char) * len);
 	if (str == NULL)
@@ -34,7 +35,9 @@ char *file_read(int file, int len)
 		free(str);
 		return (NULL);
 	}
-	read(file, str, len);
+	rd = read(file, str, len);
+	if (rd < 0)
+		return (NULL);
 
 	return (str);
 }
@@ -63,6 +66,11 @@ int main(int ac, char **av)
 		exit(98);
 	}
 	str = file_read(file_from, len);
+	if (str == NULL)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
+		exit(98);
+	}
 
 	file_to = open(av[2], O_RDWR | O_CREAT | O_APPEND, 0664);
 	wr = write(file_to, str, len);
