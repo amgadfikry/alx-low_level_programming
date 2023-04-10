@@ -66,7 +66,7 @@ int main(int ac, char **av)
 
 	file_to = open(av[2], O_RDWR | O_CREAT | O_TRUNC, 0664);
 	wr = write(file_to, str, len);
-	if (wr < 0)
+	if (wr < 0 || file_to < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
 		exit(99);
