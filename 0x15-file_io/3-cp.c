@@ -34,7 +34,7 @@ char *file_read(int file, int len)
 		free(str);
 		return (NULL);
 	}
-	rd = read(file, str, len);
+	read(file, str, len);
 
 	return (str);
 }
