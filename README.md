@@ -1,5 +1,6 @@
 # Low-level programming & Algorithm
-Projects of C programming language of ALX software engineer program
+Projects of C programming language and Data structure of ALX software engineer program
+
 ### Contents
 - 0x00. C - Hello, World
 - 0x01. C - Variables, if, else, while
@@ -18,3 +19,8 @@ Projects of C programming language of ALX software engineer program
 - 0x0E. C - Structures, typedef
 - 0x0F-function_pointers
 - 0x10-variadic_functions
+- 0x12-singly_linked_lists
+- 0x13-more_singly_linked_lists
+- 0x14-bit_manipulation
+- 0x15-file_io
+- 0x17-doubly_linked_lists
