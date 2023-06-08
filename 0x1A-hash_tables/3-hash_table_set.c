@@ -22,6 +22,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	item->key = strdup(key);
 	item->value = strdup(value);
+	if (item->key == NULL || item->value == NULL)
+		return (0);
 	item->next = NULL;
 
 	if (ht->array[index] == NULL)
