@@ -14,7 +14,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *item = NULL, *ptr = NULL;
 	unsigned long int index;
 
-	if (ht == NULL || key == NULL || value == NULL)
+	if (!ht || !key || !value || strlen(key) == 0)
 		return (0);
 	index = hash_djb2((unsigned char *)key) % ht->size;
 	item = malloc(sizeof(hash_node_t));
