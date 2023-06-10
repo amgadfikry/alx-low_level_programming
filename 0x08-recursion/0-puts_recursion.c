@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _puts_recursion - print string follow with new line
+ * _puts_recursion - print string follow with new line use recursion
  * @s: input string
  * Return: nothing
  */
