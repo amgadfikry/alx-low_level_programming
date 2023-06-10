@@ -2,7 +2,7 @@
 int sqr(int start, int result);
 
 /**
- * _sqrt_recursion - give square root
+ * _sqrt_recursion - give square root by recursion
  * @n: input number
  * Return: number
  */
