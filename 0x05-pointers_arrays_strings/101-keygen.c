@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - entery function
+ * main - entery function solve keygen
  * Return: password
  */
 int main(void)
