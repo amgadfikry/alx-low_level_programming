@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * wildcmp - compare strings
+ * wildcmp - compare strings by recursion
  * @s1: string 1
  * @s2: string 2
  * Return: 1 or 0
