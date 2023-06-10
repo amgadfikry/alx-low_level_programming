@@ -1,2 +1,2 @@
 int _putchar(char c);
-/* header */
+/* header file */
