@@ -1,8 +1,12 @@
 # Low-level programming & Algorithm
-Projects of C programming language and Data structure of ALX software engineer program
+Repository contain all projects and tasks during journey of learning C programming language.
+Inside the repository folder each directory is topic i learned inside each directory there is multiple task each task has it's specific requirements which described in README of directory
+This journey of learning C programming language contain serveral topics starting from basics to advanced including:
+basics, functions, debugging, pointers, arrays, static and dynamic library, mmemory locations, structure and more.
+Also include Data structure topic in details single linked list, double linked list, queue, stacks, hash table and more.
 
 ### Contents
-- 0x00. C - Hello, World
+- [0x00. C - Hello, World](tree/master/0x00-hello_world)
 - 0x01. C - Variables, if, else, while
 - 0x02. C - Functions, nested loops
 - 0x03. C - Debugging
