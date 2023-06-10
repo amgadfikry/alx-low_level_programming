@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * argstostr - concate all args of program
+ * argstostr - concate all args of the program
  * @ac: length of args
  * @av: array of args
  * Return: concate of args
