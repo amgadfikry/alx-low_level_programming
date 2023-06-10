@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * _strdup - pointer new allocated memory
+ * _strdup - pointer new allocated memory to duplicate string
  * @str: input arr
  * Return: null or pointer
  */
