@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * rot13 - ciper func
+ * rot13 - ciper func by rot13
  * @s: string
  * Return: ciper string
  */
