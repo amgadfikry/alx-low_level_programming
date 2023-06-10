@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_diagsums - print sum of diagonal matrix
+ * print_diagsums - print the sum of diagonal matrix
  * @a: arry input
  * @size: input int
  */
