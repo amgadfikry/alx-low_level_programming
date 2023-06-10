@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * str_concat - concate teo strings
+ * str_concat - concate two strings
  * @s1: input string
  * @s2: input string
  * Return: null or pointer
