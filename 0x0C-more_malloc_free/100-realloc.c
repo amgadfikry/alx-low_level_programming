@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _realloc - reallocates memory block
+ * _realloc - reallocates a memory block
  * @ptr: input pointer
  * @old_size: input int
  * @new_size: input int
