@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * infinite_add - add two number
+ * infinite_add - add two number to infinite
  * @n1: input num
  * @n2: input num
  * @r: result
