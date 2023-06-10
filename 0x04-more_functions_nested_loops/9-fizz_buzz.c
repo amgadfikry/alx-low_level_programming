@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - entry function
+ * main - entry function that print fuzzbuzz
  * Return: 0
  */
 int main(void)
