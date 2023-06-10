@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strncpy - concate two string
+ * _strncpy - copy two string
  * @dest: input str
  * @src: input str
  * @n: input int
