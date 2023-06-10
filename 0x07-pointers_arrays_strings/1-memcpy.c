@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _memcpy - fill memory with copy
+ * _memcpy - fill memory with copy of bytes
  * @dest: input pointer
  * @src: char input
  * @n: number of byte
