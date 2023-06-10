@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_array - print array with specific number
+ * print_array - print array
  * @a: input array
  * @n: input array length
  * Return: nothing
