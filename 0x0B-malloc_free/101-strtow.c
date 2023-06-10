@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * number_words - get number of words in string
+ * number_words - get number of words in the string
  * @str: input string
  * Return: number of words
  */
