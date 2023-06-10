@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * _calloc - allocate memory for array
+ * _calloc - allocate a memory for array
  * @nmemb: input int
  * @size: input int
  * Return: nothing
