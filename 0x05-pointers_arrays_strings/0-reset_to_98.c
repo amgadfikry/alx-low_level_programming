@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * reset_to_98 - write a new value
+ * reset_to_98 - change value of argument
  * @n: input pointer
  * Return: nothing
  */
