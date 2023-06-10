@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _atoi - print number in string
+ * _atoi - function that return length of string
  * @s: input string
- * Return: number or 0
+ * Return: length or 0
  */
 int _atoi(char *s)
 {
@@ -15,5 +15,5 @@ int _atoi(char *s)
 		i++;
 	}
 
-	return (0);
+	return (i);
 }
