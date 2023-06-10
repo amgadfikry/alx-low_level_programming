@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * alloc_grid - return pointer to grid
+ * alloc_grid - return pointer to grid alloc
  * @width: input width
  * @height: input height
  * Return: NULL or 2D array
