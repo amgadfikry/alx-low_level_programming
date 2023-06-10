@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_line - draw straight line
+ * print_line - draw straight line by character _
  * @n: num input
  *
  * Return: nothing
