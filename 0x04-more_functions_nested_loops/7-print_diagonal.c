@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_diagonal - print diagonal line
+ * print_diagonal - print diagonal line by character '\'
  * @n: num input
  *
  * Return: nothing
