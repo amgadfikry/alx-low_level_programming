@@ -6,7 +6,7 @@ basics, functions, debugging, pointers, arrays, static and dynamic library, mmem
 Also include Data structure topic in details single linked list, double linked list, queue, stacks, hash table and more.
 
 ### Contents
-- [0x00. C - Hello, World](./tree/master/0x00-hello_world)
+- [0x00. C - Hello, World](https://github.com/amgadfikry/alx-low_level_programming/tree/master/0x00-hello_world)
 - 0x01. C - Variables, if, else, while
 - 0x02. C - Functions, nested loops
 - 0x03. C - Debugging
