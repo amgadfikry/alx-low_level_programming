@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * main - enetry point
+ * main - enetry point multiply two intger
  * @argc: input int
  * @argv: input array
  * Return: 0
