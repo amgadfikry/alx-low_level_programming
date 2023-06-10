@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * string_len - length of string
+ * string_len - length of a string
  * @str: string pointer
  * Return: length
  */
