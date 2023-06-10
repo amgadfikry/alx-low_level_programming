@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * factorial - give factorial of number
+ * factorial - give factorial of number by recursion
  * @n: input number
  * Return: number
  */
