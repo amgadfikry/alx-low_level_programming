@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 /**
- * main - main function
+ * main - main function add two argv
  * @argc: count args
  * @argv: array of args
  * Return: 0
