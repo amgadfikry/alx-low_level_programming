@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * puts2 - print string
+ * puts2 - print string every two character
  * @str: input string
  * Return: nothing
  */
