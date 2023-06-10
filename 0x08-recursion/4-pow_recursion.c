@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _pow_recursion - pow number
+ * _pow_recursion - pow number by recursion
  * @x: input number
  * @y: input number
  * Return: number
