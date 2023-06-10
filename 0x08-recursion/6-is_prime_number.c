@@ -1,7 +1,7 @@
 #include "main.h"
 int check(int i, int n);
 /**
- * is_prime_number - prime or not
+ * is_prime_number - check prime or not
  * @n: input number
  * Return: number 0 or 1
  */
