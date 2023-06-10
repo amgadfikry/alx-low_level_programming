@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_rev - return length of string
+ * print_rev - print string in reverse order
  * @s: input string
  * Return: nothing
  */
