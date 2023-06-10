@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - main function
+ * main - main function print count of argv
  * @argc: count args
  * @argv: array of args
  * Return: 0
