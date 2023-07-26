@@ -37,4 +37,4 @@ def island_perimeter(grid):
                 perimeter.extend(check_bound(r, c, grid))
             else:
                 pass
-    return len(set(perimeter)) + 1
+    return len(set(perimeter))
