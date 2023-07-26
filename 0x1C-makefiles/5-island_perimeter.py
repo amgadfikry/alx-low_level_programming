@@ -22,6 +22,7 @@ def check_bound(r, c, grid):
         li.append((r + 1, c))
     return li
 
+
 def island_perimeter(grid):
     """ function that calculate perimeter of island
         Parameter:
