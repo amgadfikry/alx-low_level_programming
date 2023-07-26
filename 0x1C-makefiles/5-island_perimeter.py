@@ -30,11 +30,11 @@ def island_perimeter(grid):
         Return:
             permiter of island
     """
-    perimeter = []
+    perimeter = 0
     for r in range(len(grid)):
         for c in range(len(grid[r])):
             if grid[r][c] == 1:
-                perimeter.extend(check_bound(r, c, grid))
+                perimeter += len(check_bound(r, c, grid))
             else:
                 pass
-    return len(set(perimeter))
+    return perimeter
