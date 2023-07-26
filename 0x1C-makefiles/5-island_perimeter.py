@@ -11,16 +11,16 @@ def check_bound(r, c, grid):
         Return:
             number of bounderies
     """
-    li = []
+    perimeter = 0
     if c - 1 < 0 or grid[r][c - 1] == 0:
-        li.append((r, c - 1))
+        perimeter += 1
     if c + 1 == len(grid[r]) or grid[r][c + 1] == 0:
-        li.append((r, c + 1))
+        perimeter += 1
     if r - 1 < 0 or grid[r - 1][c] == 0:
-        li.append((r - 1, c))
+        perimeter += 1
     if r + 1 == len(grid) or grid[r + 1][c] == 0:
-        li.append((r + 1, c))
-    return li
+        perimeter += 1
+    return perimeter
 
 
 def island_perimeter(grid):
@@ -34,7 +34,7 @@ def island_perimeter(grid):
     for r in range(len(grid)):
         for c in range(len(grid[r])):
             if grid[r][c] == 1:
-                perimeter += len(check_bound(r, c, grid))
+                perimeter += check_bound(r, c, grid)
             else:
                 pass
     return perimeter
