@@ -32,19 +32,17 @@ int b_search(int *array, int start, int end, int value)
 {
 	int mid;
 
-	while (start <= end)
-	{
-		print_array(array, start, end);
-		mid = start + (end - start) / 2;
-		if (array[mid] == value)
-			return (mid);
-		else if (array[mid] > value)
-			end = mid - 1;
-		else
-			start = mid + 1;
-	}
+	print_array(array, start, end);
+	if (start > end)
+		return (-1);
 
-	return (-1);
+	mid = start + (end - start) / 2;
+	if (array[mid] == value)
+		return (mid);
+	else if (array[mid] > value)
+		return (b_search(array, start, mid - 1, value));
+	else
+		return (b_search(array, mid + 1, end, value));
 }
 
 /**
