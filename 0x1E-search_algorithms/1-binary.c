@@ -11,6 +11,7 @@ void print_array(int *array, int start, int end)
 {
 	int i = start;
 
+	printf("Searching in array: ");
 	for (; i <= end; i++)
 	{
 		if (i == end)
