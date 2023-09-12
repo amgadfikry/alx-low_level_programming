@@ -12,7 +12,7 @@ int b_search(int *array, int s, int e, int value)
 {
 	int pos;
 
-	if (s > e)
+	if (s > e && value > array[s] && value > array[e])
 		return (-1);
 	pos =  s + (((double)(e - s) / (array[e] - array[s])) * (value - array[s]));
 	if (array[pos] == 0)
