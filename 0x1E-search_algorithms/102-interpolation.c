@@ -12,13 +12,15 @@ int b_search(int *array, int s, int e, int value)
 {
 	int pos;
 
-	if (s > e && value > array[s] && value > array[e])
-		return (-1);
 	pos =  s + (((double)(e - s) / (array[e] - array[s])) * (value - array[s]));
-	if (array[pos] == 0)
+	if (s > e || pos > e || pos < s)
+	{
 		printf("Value checked array[%d] is out of range\n", pos);
+		return (-1);
+	}
 	else
 		printf("Value checked array[%d] = [%d]\n", pos, array[pos]);
+
 	if (array[pos] == value)
 		return (pos);
 	else if (array[pos] > value)
