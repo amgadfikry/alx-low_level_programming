@@ -41,7 +41,7 @@ int b_search(int *array, int start, int end, int value)
 	mid = start + (end - start) / 2;
 	if (array[mid] == value)
 	{
-		if (array[mid - 1] == value)
+		if (array[mid - 1] == value && mid > start)
 		{
 			first = b_search(array, start, mid, value);
 			if (first == -1)
