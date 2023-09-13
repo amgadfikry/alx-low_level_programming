@@ -41,11 +41,15 @@ int b_search(int *array, int start, int end, int value)
 	mid = start + (end - start) / 2;
 	if (array[mid] == value)
 	{
-		first = b_search(array, start, mid - 1, value);
-		if (first == -1)
-			return (mid);
-		else
-			return (first);
+		if (array[mid - 1] == value)
+		{
+			first = b_search(array, start, mid, value);
+			if (first == -1)
+				return (mid);
+			else
+				return (first);
+		}
+		return (mid);
 	}
 	else if (array[mid] > value)
 		return (b_search(array, start, mid - 1, value));
