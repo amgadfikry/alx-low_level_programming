@@ -52,7 +52,7 @@ int b_search(int *array, int start, int end, int value)
 		return (mid);
 	}
 	else if (array[mid] > value)
-		return (b_search(array, start, mid - 1, value));
+		return (b_search(array, start, mid, value));
 	else
 		return (b_search(array, mid + 1, end, value));
 }
