@@ -19,17 +19,12 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 	step = sqrt(size);
 	while (ptr)
 	{
-		if (ptr->index % step == 0 && ptr->index > 0)
+		if ((ptr->index % step == 0 && ptr->index > 0) || ptr->index == size - 1)
 		{
 			printf("Value checked array[%ld] = [%d]\n", ptr->index, ptr->n);
-			if (ptr->n == value || ptr->n > value)
+			if (ptr->n > value || ptr->index == size - 1)
 				break;
 			prev = ptr;
-		}
-		if (ptr->next == NULL)
-		{
-			printf("Value checked array[%ld] = [%d]\n", ptr->index, ptr->n);
-			break;
 		}
 		ptr = ptr->next;
 	}
